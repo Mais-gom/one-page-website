@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My One-Page Website</title>
+  <title>One Page Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Welcome to My One-Page Website</h1>
-    <p>This website includes a functional lightbox image gallery.</p>
-  </header>
+  <h1>One Page Website</h1>
 
-  <section>
-    <h2>My Image Gallery</h2>
-
-    <div class="gallery">
-      <img src="images/image1.jpg" alt="Gallery Image" class="gallery-img">
-    </div>
-  </section>
+  <div class="gallery">
+    <img src="images/image1.jpg" class="gallery-img" data-index="0">
+    <img src="images/image2.jpg" class="gallery-img" data-index="1">
+    <img src="images/image3.jpg" class="gallery-img" data-index="2">
+  </div>
 
   <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
-    <img id="lightbox-img" class="lightbox-content" alt="Enlarged gallery image">
+    <button id="prevBtn" class="prev">&#10094;</button>
+    <img id="lightbox-img" class="lightbox-img">
+    <button id="nextBtn" class="next">&#10095;</button>
   </div>
 
   <script src="script.js"></script>
